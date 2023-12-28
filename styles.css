@@ -1,0 +1,251 @@
+/* header section */
+.platform {
+  font-family: Copperplate;
+}
+
+h5 {
+  color: white;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+/* navbar */
+.navbar {
+  background-image: linear-gradient(rgb(200, 72, 231), rgb(161, 23, 224));
+}
+.navbar a {
+  color: white !important;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+/* aside */
+#aside-section {
+  height: 100%;
+  width: 18vw;
+  float: right;
+}
+
+.aside-row {
+  display: flex;
+  height: 5rem;
+  flex-shrink: 1;
+  flex-grow: 1;
+  color: white;
+  margin: 3px;
+}
+.aside-col {
+  margin: 5px;
+}
+.aside-col img {
+  height: 50px;
+  width: 50px;
+}
+
+/* main section */
+
+.section {
+  display: block;
+  height: auto;
+  width: 100%;
+  background-color: rgb(80, 34, 187);
+}
+#main-section {
+  height: 100%;
+  width: 80vw;
+  background-image: linear-gradient(rgb(15, 15, 85), black);
+}
+
+.carousel-item img {
+  height: 50vh;
+}
+
+.box {
+  display: flex;
+  margin: 2px;
+}
+
+.box > * {
+  font-size: 15px;
+}
+/* artist */
+.artist {
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  width: 70vw;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+.shape img {
+  width: auto;
+  height: 70%;
+  width: 100%;
+
+  border-radius: 50%;
+  flex-shrink: 1;
+}
+.shape p {
+  color: white;
+  text-align: center;
+}
+/* combo */
+.combo {
+  display: flex;
+  flex-direction: row;
+  height: 130px;
+  width: 80vw;
+  background-color: blue;
+}
+.mood {
+  margin: 2px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.mood img {
+  width: auto;
+  height: 100%;
+  width: 100%;
+  flex-shrink: 1;
+  border-radius: 50%;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* hindi songs */
+.h-song {
+  margin: 2px;
+}
+.h-song img {
+  width: auto;
+  height: 70%;
+  width: 100%;
+  flex-shrink: 1;
+}
+.h-song p {
+  color: white;
+  text-align: center;
+}
+
+.e-song {
+  margin: 2px;
+}
+.e-song img {
+  width: auto;
+  height: 70%;
+  width: 100%;
+  flex-shrink: 1;
+}
+.e-song p {
+  color: white;
+  text-align: center;
+}
+
+/* footer */
+#footer-section {
+  position: fixed;
+  bottom: 0px;
+  height: 70px;
+  width: 100%;
+  z-index: 1;
+  background-image: linear-gradient(blue, black);
+  text-align: center;
+}
+#footer-section i {
+  margin: 4px;
+  margin-top: 10px;
+  margin-right: 1rem;
+}
+
+.player {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+/* this is the song-duration slider */
+#slider {
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+/* ////////// */
+.time {
+  margin: 0px 10px;
+  color: white;
+}
+
+/* adjusting the slider for better visuals */
+.slidecontainer {
+  width: 100%;
+}
+/* for audio and main center player */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #f1e1e1;
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+/* hover effect for the slider */
+.slider:hover {
+  opacity: 1;
+}
+/* these are for adjusting the dimensions and default styling of the long-slider */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #e2e4e7;
+  cursor: pointer;
+}
+/* this is the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4caf50;
+  cursor: pointer;
+}
+/* after 992 px  */
+@media screen and (min-width: 992px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+  .box {
+    margin: 20px;
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+  }
+  .box > img {
+    height: 60%;
+    width: 60%;
+  }
+  .box > p {
+    font-size: 25px;
+    margin-left: -8 rem;
+  }
+}
